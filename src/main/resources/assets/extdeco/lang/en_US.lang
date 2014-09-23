@@ -1,0 +1,12 @@
+tile.extdeco:marbleSlabSingle.1.name=White Marble
+tile.extdeco:marbleSlabSingle.2.name=Black Marble
+tile.extdeco:marbleSlabSingle.3.name=Yellow Marble
+tile.extdeco:marbleBrickSlabSingle.1.name=White Marble Brick
+tile.extdeco:marbleBrickSlabSingle.2.name=Black Marble Brick
+tile.extdeco:marbleBrickSlabSingle.3.name=Yellow Marble Brick
+tile.extdeco:marbleBrickSlabSingle.4.name=Ice Brick
+tile.extdeco:marbleBrickSlabSingle.5.name=Smooth Ice
+tile.extdeco:marbleBrickSlabSingle.6.name=Snow Brick
+tile.extdeco_whiteMarbleFence.name=White Marble Fence
+tile.extdeco_freezer.name=Freezer
+itemGroup.extDeco=Extended Decorations

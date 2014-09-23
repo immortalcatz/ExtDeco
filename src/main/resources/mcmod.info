@@ -1,0 +1,16 @@
+[
+{
+  "modid": "extdeco",
+  "name": "Extended Decorations",
+  "description": "Add more Decoration objects to Minecraft",
+  "version": "Pre_Alpha 0.3",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["neocromicon"],
+  "credits": "The MC,Forge and FML guys, for making this",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,12 @@
+tile.extdeco:marbleSlabSingle.1.name=Weisser Marmor
+tile.extdeco:marbleSlabSingle.2.name=Schwarzer Marmor
+tile.extdeco:marbleSlabSingle.3.name=Gelber Marmor
+tile.extdeco:marbleBrickSlabSingle.1.name=Weisser Marmor Ziegel
+tile.extdeco:marbleBrickSlabSingle.2.name=Schwarzer Marmor Ziegel
+tile.extdeco:marbleBrickSlabSingle.3.name=Gelber Marmor Ziegel
+tile.extdeco:marbleBrickSlabSingle.4.name=Eis Ziegel
+tile.extdeco:marbleBrickSlabSingle.5.name=Glattes Eis
+tile.extdeco:marbleBrickSlabSingle.6.name=Schnee Ziegel
+tile.extdeco_whiteMarbleFence.name=Weisser Marmor Zaun
+tile.extdeco_freezer.name=Gefrierer
+itemGroup.extDeco=Extended Decorations
