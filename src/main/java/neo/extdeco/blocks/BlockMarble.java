@@ -26,7 +26,7 @@ public class BlockMarble extends Block
     public BlockMarble()
     {
         super(Material.rock);
-        this.setCreativeTab(CreativeTabs.tabBlock);
+        this.setCreativeTab(ExtDeco.tabExtDeco);
     }
 
     /**

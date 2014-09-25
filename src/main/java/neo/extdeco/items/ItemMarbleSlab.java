@@ -20,9 +20,9 @@ public class ItemMarbleSlab extends ItemBlock
     public ItemMarbleSlab(Block block)
     {
      super(block);
-     this.singleSlab = (BlockSlab) BlocksExtDeco.marbleSlabSingle; //Here you have to set your single slab
-     this.doubleSlab = (BlockSlab) BlocksExtDeco.marbleSlabDouble; //And here your double slab
-     this.field_150948_b = false;
+        this.singleSlab = (BlockSlab) BlocksExtDeco.marbleSlabSingle; //Here you have to set your single slab
+        this.doubleSlab = (BlockSlab) BlocksExtDeco.marbleSlabDouble; //And here your double slab
+        this.field_150948_b = false;
         this.setMaxDamage(0);
         this.setHasSubtypes(true);
     }

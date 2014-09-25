@@ -53,7 +53,7 @@ public class BlockMarbleSlabs extends BlockSlab {
 		setStepSound(Block.soundTypeStone);
 		useNeighborBrightness = true;
 		if (_isDoubleSlab)
-			setCreativeTab(ExtDeco.tabExtDeco); // Set the creative tab to null so that the
+			setCreativeTab(null); // Set the creative tab to null so that the
 									// double slab blocks will not appear in the
 									// creative tabs
 		else

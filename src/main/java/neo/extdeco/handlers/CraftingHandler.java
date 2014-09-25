@@ -12,13 +12,17 @@ public class CraftingHandler {
 	private BlocksExtDeco blocks = new BlocksExtDeco();
 	private RecipesFreezer recipesFreezer = new RecipesFreezer();
 	
+	public void oldInit() {
+		
+		oldInitMarbleRecipes();
+		oldInitBrickRecipes();
+		oldInitFreezerRecipes();
+	}
+	
 	public void init() {
 		
-		initMarbleRecipes();
-		initBrickRecipes();
-		initFreezerRecipes();
 	}
-	private void initMarbleRecipes() {
+	private void oldInitMarbleRecipes() {
 		
 		//White Marble
 		GameRegistry.addRecipe(new ItemStack(blocks.marbleSlabSingle, 2, 0), new Object[]{
@@ -39,7 +43,7 @@ public class CraftingHandler {
 		});
 	}
 	
-    private void initBrickRecipes() {
+    private void oldInitBrickRecipes() {
     	
     	//White Marble Brick
     	GameRegistry.addRecipe(new ItemStack(blocks.marbleBrickSlabDouble, 2, 0), new Object[]{
@@ -97,7 +101,7 @@ public class CraftingHandler {
 	    });   	
 	}
 	
-	private void initFreezerRecipes() {
+	private void oldInitFreezerRecipes() {
 		
 		GameRegistry.addRecipe(new ItemStack(blocks.freezer), new Object[]{
 	    	"SSS",
