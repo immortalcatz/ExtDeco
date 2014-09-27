@@ -104,10 +104,10 @@ public class CraftingHandler {
 	private void oldInitFreezerRecipes() {
 		
 		GameRegistry.addRecipe(new ItemStack(blocks.freezer), new Object[]{
+	    	"CSC",
 	    	"SSS",
-	    	"SIS",
-	    	"SSS",
-	    	'S', Blocks.cobblestone, 'I', Blocks.ice
+	    	"CSC",
+	    	'S', Blocks.snow, 'C', Blocks.cobblestone, 'I', Blocks.ice
 		});		
 		recipesFreezer.addRecipe(Items.water_bucket, new ItemStack(Blocks.ice), 0.4F);
 	}
