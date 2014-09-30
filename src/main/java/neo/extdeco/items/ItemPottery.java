@@ -23,14 +23,11 @@ public class ItemPottery extends Item {
 	 * @param itemColor
 	 * @param pottery : Block Spawn
 	 */
-	public ItemPottery(boolean isEmptyPottery, String name, String itemColor, Block pottery) {
-		super();
-		
-		String potteryName = name + itemColor;
-		
+	public ItemPottery(boolean isEmptyPottery, String name, Block pottery) {
+		super();		
 		potterySpawnID = pottery;
-		setUnlocalizedName(ExtDeco.MODID + ":" + potteryName);
-        setTextureName(ExtDeco.MODID + ":" + potteryName);
+		setUnlocalizedName(ExtDeco.MODID + ":" + name);
+        setTextureName(ExtDeco.MODID + ":" + name);
         setCreativeTab(ExtDeco.tabExtDeco);
 		this.isEmptyPottery = isEmptyPottery;
 	}
@@ -39,7 +36,6 @@ public class ItemPottery extends Item {
 	public boolean onItemUse(ItemStack itemStack, EntityPlayer entityPlayer, World world, int x, int y, int z, int p_77648_7_, float p_77648_8_, float p_77648_9_, float p_77648_10_) {
         
 		if (isEmptyPottery) {
-			System.out.println("Is Empty Pottery: " + isEmptyPottery);
 			return false;			
 		} else {
 			

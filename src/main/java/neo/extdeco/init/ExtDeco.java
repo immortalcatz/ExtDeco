@@ -67,15 +67,16 @@ public class ExtDeco {
 		items.init();
 		
 		sProxy.registerTileEntities();
-		sProxy.registerRenderThings();
+        sProxy.registerRenderThings();
 	}	
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		FMLCommonHandler.instance().bus().register(events);
         MinecraftForge.EVENT_BUS.register(events); 
-        
+
         sProxy.registerNetwork();
+
         //crafting.init();
         
     	if (oldMod) {

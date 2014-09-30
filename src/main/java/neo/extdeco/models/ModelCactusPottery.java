@@ -1,4 +1,4 @@
-package net.neocromicon.src.ExtDecoPottery;
+package neo.extdeco.models;
 
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;

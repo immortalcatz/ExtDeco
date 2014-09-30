@@ -1,14 +1,15 @@
-package net.neocromicon.src.ExtDecoPottery;
+package neo.extdeco.tileentitys;
 
+import neo.extdeco.blocks.BlocksExtDeco;
 import net.minecraft.block.Block;
-import net.minecraft.entity.Entity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
-import net.neocromicon.src.ExtDecoBase.ExtDecoMod;
 
-public class TileEntityPottery extends TileEntity
-{
-    public TileEntityPottery(World var1)
-    {
+public class TileEntityPottery extends TileEntity {
+	
+	public String potteryTextureAndName;
+	
+    public TileEntityPottery(World var1, String potteryTextureAndName) {    	
+    	this.potteryTextureAndName = potteryTextureAndName;
     }
 }
