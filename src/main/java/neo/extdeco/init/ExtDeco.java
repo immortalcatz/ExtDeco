@@ -3,13 +3,10 @@ package neo.extdeco.init;
 import neo.extdeco.blocks.BlocksExtDeco;
 import neo.extdeco.handlers.CraftingHandler;
 import neo.extdeco.handlers.EventHandlerExtDeco;
-import neo.extdeco.handlers.VillagerTradeHandler;
 import neo.extdeco.items.ItemsExtDeco;
 import neo.extdeco.world.WorldExtDeco;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
-import net.minecraft.world.EnumDifficulty;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -20,7 +17,6 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-import cpw.mods.fml.common.registry.VillagerRegistry;
 
 @Mod(modid = ExtDeco.MODID, version = ExtDeco.VERSION,
 dependencies = "after:ForgeMultipart;after:ExtraUtilities;after:ProjectRed")
@@ -77,19 +73,18 @@ public class ExtDeco {
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
 		FMLCommonHandler.instance().bus().register(events);
-        MinecraftForge.EVENT_BUS.register(events);       
+        MinecraftForge.EVENT_BUS.register(events); 
+        
         sProxy.registerNetwork();
+        //crafting.init();
         
     	if (oldMod) {
-    		crafting.oldInit();
+    		//crafting.oldInit();
     	}
-    	
-    	crafting.init();
-
-		if (isPeaceful) {
-			VillagerRegistry.instance().registerVillageTradeHandler(3, new VillagerTradeHandler());
+    	if (isPeaceful) {
+    		crafting.peacefulInit();
 		}
-		
+
 		GameRegistry.registerWorldGenerator(new WorldExtDeco(), 0);
 	}
 }

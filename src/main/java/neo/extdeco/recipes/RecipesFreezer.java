@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
@@ -25,11 +26,32 @@ public class RecipesFreezer {
 
 	}
 	
-	public void addRecipe(Item item, ItemStack itemstack, float experience){
-		this.addLists(item, itemstack, experience);
+	/**
+	 * 
+	 * @param block
+	 * @param itemstack
+	 * @param experience
+	 */
+	public void addRecipe(Block block, ItemStack itemstack, float experience) {
+		this.addListsBlocks(block, itemstack, experience);			
 	}
 	
-	public void addLists(Item item, ItemStack itemstack, float experience){
+	public void addListsBlocks(Block block, ItemStack itemstack, float experience){
+		this.putLists(new ItemStack(block, 1, 32767), itemstack, experience);
+	}
+	
+	/**
+	 * 
+	 * @param item
+	 * @param itemstack
+	 * @param experience
+	 */
+	public void addRecipe(Item item, ItemStack itemstack, float experience){
+		
+		this.addListsItems(item, itemstack, experience);		
+	}
+	
+	public void addListsItems(Item item, ItemStack itemstack, float experience){
 		this.putLists(new ItemStack(item, 1, 32767), itemstack, experience);
 	}
 	

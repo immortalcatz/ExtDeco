@@ -26,8 +26,8 @@ public class BlockMarbleFence extends BlockFence
     {
         super(fenceTexture, material);
         this.fenceTexture = fenceTexture_;
-        //this.setCreativeTab(ExtDeco.tabExtDeco);
-        this.setBlockName(ExtDeco.MODID + "_" + name);
+        this.setCreativeTab(ExtDeco.tabExtDeco);
+        this.setBlockName(ExtDeco.MODID + ":" + name);
     }
 
     /**

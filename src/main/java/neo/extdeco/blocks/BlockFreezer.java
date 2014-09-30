@@ -40,10 +40,16 @@ public class BlockFreezer extends BlockContainer  {
     private static boolean isBurning;
     private final Random random = new Random();
 	
+    /**
+     * 
+     * @param rawName
+     * @param hardness
+     * @param isBurning
+     */
 	public BlockFreezer(String rawName, Float hardness, boolean isBurning) {
 		super(Material.rock);
 		this.rawName = rawName;
-		this.setBlockName(ExtDeco.MODID + "_" + rawName);
+		this.setBlockName(ExtDeco.MODID + ":" + rawName);
 		this.isBurning2 = isBurning;
 		this.setHardness(hardness);
 	}

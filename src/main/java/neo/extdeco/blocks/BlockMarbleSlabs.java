@@ -115,8 +115,7 @@ public class BlockMarbleSlabs extends BlockSlab {
 	
 	@Override
 	public Item getItemDropped(int par1, Random rand, int par3) {
-		return (isDoubleSlab ? Item.getItemFromBlock(singleSlab) : Item
-				.getItemFromBlock(this));
+		return (isDoubleSlab ? Item.getItemFromBlock(singleSlab) : Item.getItemFromBlock(this));
 	}
 
 	@Override

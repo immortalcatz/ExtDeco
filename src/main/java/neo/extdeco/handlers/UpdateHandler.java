@@ -43,7 +43,6 @@ public class UpdateHandler {
 	                if (updateVersion.endsWith(clientVersion)) {	                	
 	                    FMLLog.info("[Ext Deco] Your version is UpToDate: v" + updateVersion);
 	                } else {
-	                	EntityClientPlayerMP player = FMLClientHandler.instance().getClient().thePlayer;
 	                    FMLLog.info("[Ext Deco] A new version is available: v" + updateVersion);
 	                    event.player.addChatMessage(new ChatComponentText("\u00a72[Ext Deco]\u00a7r A new version is available: " + updateVersion));
 	                    event.player.addChatMessage(new ChatComponentText("\u00a72[Ext Deco]\u00a7r New features of " + updateVersion + ": " + updateInfo));
@@ -62,7 +61,7 @@ public class UpdateHandler {
     	}
     }
 
-	/*
+	/**
 	 * Check if Update Server Online
 	 * 
 	 * @return : Network status
