@@ -52,6 +52,8 @@ public class BlocksExtDeco {
 	}
 	
 	public void init() {
+		
+		
 		/*for (Block var12: GameRegistry.findBlock(ExtDeco.MODID, Blocks.fence.getUnlocalizedName()) {
 
     	}

@@ -10,5 +10,7 @@ tile.extdeco:marbleBrickSlabSingle.6.name=Schnee Ziegel
 tile.extdeco:whiteMarbleFence.name=Weisser Marmor Zaun
 item.extdeco:emptyPotteryWhite.name=Weisser Topf
 item.extdeco:emptyPotteryBlack.name=Schwarzer Topf
+item.extdeco:redFlowerPotteryWhite.name=Topf mit Roten Blumen (W)
+item.extdeco:redFlowerPotteryBlack.name=Topf mit Roten Blumen (S)
 tile.extdeco:freezer.name=Gefrierer
 itemGroup.extDeco=Extended Decorations

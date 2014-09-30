@@ -17,15 +17,20 @@ public class ItemPottery extends Item {
     private Block potterySpawnID;
 	
 	/**
+	 * 
 	 * @param isEmptyPottery
 	 * @param name
-	 * @param textureName
+	 * @param itemColor
+	 * @param pottery : Block Spawn
 	 */
-	public ItemPottery(boolean isEmptyPottery, String name, String textureName, Block pottery) {
+	public ItemPottery(boolean isEmptyPottery, String name, String itemColor, Block pottery) {
 		super();
+		
+		String potteryName = name + itemColor;
+		
 		potterySpawnID = pottery;
-		setUnlocalizedName(ExtDeco.MODID + ":" + name);
-        setTextureName(ExtDeco.MODID + ":" + textureName);
+		setUnlocalizedName(ExtDeco.MODID + ":" + potteryName);
+        setTextureName(ExtDeco.MODID + ":" + potteryName);
         setCreativeTab(ExtDeco.tabExtDeco);
 		this.isEmptyPottery = isEmptyPottery;
 	}

@@ -10,5 +10,7 @@ tile.extdeco:marbleBrickSlabSingle.6.name=Snow Brick
 tile.extdeco:whiteMarbleFence.name=White Marble Fence
 item.extdeco:emptyPotteryWhite.name=Empty Pottery White
 item.extdeco:emptyPotteryBlack.name=Empty Pottery Black
+item.extdeco:redFlowerPotteryWhite.name=Red Flower Pottery (W)
+item.extdeco:redFlowerPotteryBlack.name=Red Flower Pottery (B)
 tile.extdeco:freezer.name=Freezer
 itemGroup.extDeco=Extended Decorations
