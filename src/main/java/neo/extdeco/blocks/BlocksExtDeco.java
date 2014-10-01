@@ -14,9 +14,12 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class BlocksExtDeco {
 	
-	public static Block marble,marbleSlabSingle,marbleSlabDouble,marbleBrick,marbleBrickSlabSingle,marbleBrickSlabDouble,freezer,freezerOn;
 	public static BlockFence whiteMarbleFence;
-	public static Block redFlowerPotteryWhite,redFlowerPotteryBlack,yellowFlowerPotteryWhite,yellowFlowerPotteryBlack;
+	public static Block marble,marbleSlabSingle,marbleSlabDouble,marbleBrick,marbleBrickSlabSingle,marbleBrickSlabDouble,freezer,freezerOn;
+	
+	public static Block yellowFlowerPotteryWhite,yellowFlowerPotteryBlack,orangeFlowerPotteryWhite,orangeFlowerPotteryBlack,redFlowerPotteryWhite,redFlowerPotteryBlack;
+	public static Block whiteFlowerPotteryWhite,whiteFlowerPotteryBlack;
+	
 	public static Block cactusPotteryWhite,cactusPotteryBlack;
 	public static Block buchsPotteryWhite,buchsPotteryBlack;
 
@@ -56,31 +59,43 @@ public class BlocksExtDeco {
 	
 	public void init() {
 		
-		/** Red Flower Pottery's*/
-		redFlowerPotteryWhite = new BlockPottery("redFlowerPotteryWhite", "white");
-		GameRegistry.registerBlock(redFlowerPotteryWhite, "redFlowerPotteryWhite");
-		
-		redFlowerPotteryBlack = new BlockPottery("redFlowerPotteryBlack", "black");
-		GameRegistry.registerBlock(redFlowerPotteryBlack, "redFlowerPotteryBlack");
-		
 		/** Yellow Flower Pottery's*/
 		yellowFlowerPotteryWhite = new BlockPottery("yellowFlowerPotteryWhite", "white");
-		GameRegistry.registerBlock(yellowFlowerPotteryWhite, "yellowFlowerPotteryWhite");
-		
+		GameRegistry.registerBlock(yellowFlowerPotteryWhite, "yellowFlowerPotteryWhite");		
 		yellowFlowerPotteryBlack = new BlockPottery("yellowFlowerPotteryBlack", "black");
 		GameRegistry.registerBlock(yellowFlowerPotteryBlack, "yellowFlowerPotteryBlack");
 		
+		/** Orange Flower Pottery's*/
+		orangeFlowerPotteryWhite = new BlockPottery("orangeFlowerPotteryWhite", "white");
+		GameRegistry.registerBlock(orangeFlowerPotteryWhite, "orangeFlowerPotteryWhite");		
+		orangeFlowerPotteryBlack = new BlockPottery("orangeFlowerPotteryBlack", "black");
+		GameRegistry.registerBlock(orangeFlowerPotteryBlack, "orangeFlowerPotteryBlack");
+		
+		/** Red Flower Pottery's*/
+		redFlowerPotteryWhite = new BlockPottery("redFlowerPotteryWhite", "white");
+		GameRegistry.registerBlock(redFlowerPotteryWhite, "redFlowerPotteryWhite");		
+		redFlowerPotteryBlack = new BlockPottery("redFlowerPotteryBlack", "black");
+		GameRegistry.registerBlock(redFlowerPotteryBlack, "redFlowerPotteryBlack");
+
+		/** White Flower Pottery's*/
+		whiteFlowerPotteryWhite = new BlockPottery("whiteFlowerPotteryWhite", "white");
+		GameRegistry.registerBlock(whiteFlowerPotteryWhite, "whiteFlowerPotteryWhite");		
+		whiteFlowerPotteryBlack = new BlockPottery("whiteFlowerPotteryBlack", "black");
+		GameRegistry.registerBlock(whiteFlowerPotteryBlack, "whiteFlowerPotteryBlack");
+		
+		
+		
 		/** Cactus Flower Pottery's*/
 		cactusPotteryWhite = new BlockPottery("cactusPotteryWhite", "white");
-		GameRegistry.registerBlock(cactusPotteryWhite, "cactusPotteryWhite");
-		
+		GameRegistry.registerBlock(cactusPotteryWhite, "cactusPotteryWhite");		
 		cactusPotteryBlack = new BlockPottery("cactusPotteryBlack", "black");
 		GameRegistry.registerBlock(cactusPotteryBlack, "cactusPotteryBlack");
 		
+		
+		
 		/** Buchs Flower Pottery's*/
 		buchsPotteryWhite = new BlockPottery("buchsPotteryWhite", "white");
-		GameRegistry.registerBlock(buchsPotteryWhite, "buchsPotteryWhite");
-		
+		GameRegistry.registerBlock(buchsPotteryWhite, "buchsPotteryWhite");		
 		buchsPotteryBlack = new BlockPottery("buchsPotteryBlack", "black");
 		GameRegistry.registerBlock(buchsPotteryBlack, "buchsPotteryBlack");
 		

@@ -1,4 +1,4 @@
-package net.neocromicon.src.ExtDecoStuff;
+package neo.extdeco.blocks;
 
 import neo.extdeco.init.ExtDeco;
 import net.minecraft.block.Block;
@@ -7,16 +7,17 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.AxisAlignedBB;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.neocromicon.src.ExtDecoBase.ExtDecoMod;
 
-public class BlockMarbleFence extends BlockFence
+public class BlockFenceMarble extends BlockFence
 {
 	
-	public BlockMarbleFence(String fenceTexture_, String name, Material material)
+	private Object fenceTexture;
+
+	public BlockFenceMarble(String fenceTexture, String name, Material material)
     {
         super(fenceTexture, material);
-        this.fenceTexture = fenceTexture_;
-        this.setCreativeTab(ExtDeco.tabExtDeco);
+        this.fenceTexture = fenceTexture;
+        this.setCreativeTab(null);
         this.setBlockName(ExtDeco.MODID + ":" + name);
     }
 
@@ -112,7 +113,7 @@ public class BlockMarbleFence extends BlockFence
 		return 11;
 	}
 
-	public boolean canConnectFenceTo(IBlockAccess par1IBlockAccess, int par2,
+	/*public boolean canConnectFenceTo(IBlockAccess par1IBlockAccess, int par2,
 			int par3, int par4) {
 		int i = par1IBlockAccess.getBlockId(par2, par3, par4);
 
@@ -149,6 +150,6 @@ public class BlockMarbleFence extends BlockFence
 				|| par0 == ExtDecoMod.MarbleBrickFenceWhite.blockID
 				|| par0 == ExtDecoMod.MarbleBrickFenceBlack.blockID
 				|| par0 == ExtDecoMod.MarbleBrickFenceYellow.blockID;
-	}
+	}*/
 
 }

@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.7.10-0.5"
+version = "1.7.10-0.6_b1"
 group= "neo.extdeco.init" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "ExtDeco"
+archivesBaseName = "ExtDeco-Experimental"
 
 minecraft {
     version = "1.7.10-10.13.0.1208"

@@ -21,8 +21,9 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @Mod(modid = ExtDeco.MODID, version = ExtDeco.VERSION,
 dependencies = "after:ForgeMultipart;after:ExtraUtilities;after:ProjectRed")
 public class ExtDeco {
+	public static boolean isDebug = true;
 	public static final String MODID = "extdeco";
-	public static final String VERSION = "0.5";
+	public static final String VERSION = "1.7.10-0.6_b1";
 	
 	@SidedProxy(clientSide = "neo.extdeco.init.ClientProxy", serverSide = "neo.extdeco.init.ServerProxy")			
     public static ServerProxy sProxy;

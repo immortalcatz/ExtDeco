@@ -10,14 +10,20 @@ tile.extdeco:marbleBrickSlabSingle.6.name=Snow Brick
 tile.extdeco:whiteMarbleFence.name=White Marble Fence
 item.extdeco:emptyPotteryWhite.name=Empty Pottery White
 item.extdeco:emptyPotteryBlack.name=Empty Pottery Black
-item.extdeco:redFlowerPotteryWhite.name=Red Flower Pottery (W)
-item.extdeco:redFlowerPotteryBlack.name=Red Flower Pottery (B)
-item.extdeco:yellowFlowerPotteryWhite.name=Yellow Flower Pottery (W)
-item.extdeco:yellowFlowerPotteryBlack.name=Yellow Flower Pottery (B)
+
+item.extdeco:yellowFlowerPotteryWhite.name=Dandelion Pottery (W)
+item.extdeco:yellowFlowerPotteryBlack.name=Dandelion Pottery (B)
+item.extdeco:orangeFlowerPotteryWhite.name= Orange Tulip Pottery (W)
+item.extdeco:orangeFlowerPotteryBlack.name= Orange Tulip Pottery (B)
+item.extdeco:redFlowerPotteryWhite.name=Rose Pottery (W)
+item.extdeco:redFlowerPotteryBlack.name=Rose Pottery (B)
+item.extdeco:whiteFlowerPotteryWhite.name=Oxeye Daisy Pottery (W)
+item.extdeco:whiteFlowerPotteryBlack.name=Oxeye Daisy Pottery (B)
+
 item.extdeco:cactusPotteryWhite.name=Cactus Pottery (W)
 item.extdeco:cactusPotteryBlack.name=Cactus Pottery (B)
 item.extdeco:buchsPotteryWhite.name=Boxwood Pottery (W)
 item.extdeco:buchsPotteryBlack.name=Boxwood Pottery (B)
-item.extdeco:buchsItem.name=Boxwoodk
+item.extdeco:buchsItem.name=Boxwood
 tile.extdeco:freezer.name=Freezer
 itemGroup.extDeco=Extended Decorations

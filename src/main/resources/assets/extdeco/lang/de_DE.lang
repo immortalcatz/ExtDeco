@@ -10,10 +10,16 @@ tile.extdeco:marbleBrickSlabSingle.6.name=Schnee Ziegel
 tile.extdeco:whiteMarbleFence.name=Weisser Marmor Zaun
 item.extdeco:emptyPotteryWhite.name=Weisser Topf
 item.extdeco:emptyPotteryBlack.name=Schwarzer Topf
-item.extdeco:redFlowerPotteryWhite.name=Topf mit Roten Blumen (W)
-item.extdeco:redFlowerPotteryBlack.name=Topf mit Roten Blumen (S)
-item.extdeco:yellowFlowerPotteryWhite.name=Topf mit Gelben Blumen (W)
-item.extdeco:yellowFlowerPotteryBlack.name=Topf mit Gelben Blumen (S)
+
+item.extdeco:yellowFlowerPotteryWhite.name=Topf mit Löwenzahn (W)
+item.extdeco:yellowFlowerPotteryBlack.name=Topf mit Löwenzahn (S)
+item.extdeco:orangeFlowerPotteryWhite.name=Topf mit Orangener Tulpe (W)
+item.extdeco:orangeFlowerPotteryBlack.name=Topf mit Orangener Tulpe (S)
+item.extdeco:redFlowerPotteryWhite.name=Topf mit Rosen (W)
+item.extdeco:redFlowerPotteryBlack.name=Topf mit Rosen (S)
+item.extdeco:whiteFlowerPotteryWhite.name=Topf mit Margerite (W)
+item.extdeco:whiteFlowerPotteryBlack.name=Topf mit Margerite (S)
+
 item.extdeco:cactusPotteryWhite.name=Topf mit Kaktus (W)
 item.extdeco:cactusPotteryBlack.name=Topf mit Kaktus (S)
 item.extdeco:buchsPotteryWhite.name=Topf mit Buchsbaum (W)

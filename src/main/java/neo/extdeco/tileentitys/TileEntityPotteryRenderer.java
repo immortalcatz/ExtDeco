@@ -28,7 +28,27 @@ public class TileEntityPotteryRenderer extends TileEntitySpecialRenderer {
 		GL11.glPushMatrix();
         GL11.glTranslatef((float)d + 0.5F, (float)d1 - 0.5F, (float)d2 + 0.5F);
         
-        /** Flower Models */
+        /** Flower Models */		
+		if (tileEntityPottery.getBlockType() == BlocksExtDeco.yellowFlowerPotteryWhite) {
+			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/yellowFlowerPotteryWhite.png"));
+            GL11.glPushMatrix();
+            aFlowerModel.renderModel(0.0625f);
+        }
+		if (tileEntityPottery.getBlockType() == BlocksExtDeco.yellowFlowerPotteryBlack) {
+			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/yellowFlowerPotteryBlack.png"));
+            GL11.glPushMatrix();
+            aFlowerModel.renderModel(0.0625f);
+        }
+		if (tileEntityPottery.getBlockType() == BlocksExtDeco.orangeFlowerPotteryWhite) {
+			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/orangeFlowerPotteryWhite.png"));
+            GL11.glPushMatrix();
+            aFlowerModel.renderModel(0.0625f);
+        }
+		if (tileEntityPottery.getBlockType() == BlocksExtDeco.orangeFlowerPotteryBlack) {
+			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/orangeFlowerPotteryBlack.png"));
+            GL11.glPushMatrix();
+            aFlowerModel.renderModel(0.0625f);
+        }
 		if (tileEntityPottery.getBlockType() == BlocksExtDeco.redFlowerPotteryWhite) {
 			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/redFlowerPotteryWhite.png"));
             GL11.glPushMatrix();
@@ -39,13 +59,13 @@ public class TileEntityPotteryRenderer extends TileEntitySpecialRenderer {
             GL11.glPushMatrix();
             aFlowerModel.renderModel(0.0625f);
         }
-		if (tileEntityPottery.getBlockType() == BlocksExtDeco.yellowFlowerPotteryWhite) {
-			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/yellowFlowerPotteryWhite.png"));
+		if (tileEntityPottery.getBlockType() == BlocksExtDeco.whiteFlowerPotteryWhite) {
+			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/whiteFlowerPotteryWhite.png"));
             GL11.glPushMatrix();
             aFlowerModel.renderModel(0.0625f);
         }
-		if (tileEntityPottery.getBlockType() == BlocksExtDeco.yellowFlowerPotteryBlack) {
-			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/yellowFlowerPotteryBlack.png"));
+		if (tileEntityPottery.getBlockType() == BlocksExtDeco.whiteFlowerPotteryBlack) {
+			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/whiteFlowerPotteryBlack.png"));
             GL11.glPushMatrix();
             aFlowerModel.renderModel(0.0625f);
         }
