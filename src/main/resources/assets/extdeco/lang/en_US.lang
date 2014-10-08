@@ -1,16 +1,16 @@
-tile.extdeco:marbleSlabSingle.1.name=White Marble
-tile.extdeco:marbleSlabSingle.2.name=Black Marble
-tile.extdeco:marbleSlabSingle.3.name=Yellow Marble
-tile.extdeco:marbleBrickSlabSingle.1.name=White Marble Brick
-tile.extdeco:marbleBrickSlabSingle.2.name=Black Marble Brick
-tile.extdeco:marbleBrickSlabSingle.3.name=Yellow Marble Brick
-tile.extdeco:marbleBrickSlabSingle.4.name=Ice Brick
-tile.extdeco:marbleBrickSlabSingle.5.name=Smooth Ice
-tile.extdeco:marbleBrickSlabSingle.6.name=Snow Brick
+extdeco:marbleWhite.name=White Marble
+extdeco:marbleBlack.name=Black Marble
+extdeco:marbleYellow.name=Yellow Marble
+extdeco:marbleBrickWhite.name=White Marble Brick
+extdeco:marbleBrickBlack.name=Black Marble Brick
+extdeco:marbleBrickYellow.name=Yellow Marble Brick
+extdeco:otherStuffBrickIce.name=Ice Brick
+extdeco:otherStuffIceSmooth.name=Smooth Ice
+extdeco:otherStuffBrickSnow.name=Snow Brick
 tile.extdeco:whiteMarbleFence.name=White Marble Fence
+
 item.extdeco:emptyPotteryWhite.name=Empty Pottery White
 item.extdeco:emptyPotteryBlack.name=Empty Pottery Black
-
 item.extdeco:yellowFlowerPotteryWhite.name=Dandelion Pottery (W)
 item.extdeco:yellowFlowerPotteryBlack.name=Dandelion Pottery (B)
 item.extdeco:orangeFlowerPotteryWhite.name= Orange Tulip Pottery (W)

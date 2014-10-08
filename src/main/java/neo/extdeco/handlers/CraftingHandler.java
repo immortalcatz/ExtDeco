@@ -9,13 +9,13 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
 public class CraftingHandler {
 
-	private BlocksExtDeco block = new BlocksExtDeco();
-	private RecipesFreezer recipesFreezer = new RecipesFreezer().smelting();
+	private static BlocksExtDeco block = new BlocksExtDeco();
+	private static RecipesFreezer recipesFreezer = new RecipesFreezer().smelting();
 
 	public void oldInit() {
 
 		oldInitMarbleRecipes();
-		oldInitBrickRecipes();
+		oldInitSlabRecipes();
 		oldInitFreezerRecipes();
 	}
 
@@ -23,80 +23,55 @@ public class CraftingHandler {
 
 	}
 	
-    private void oldInitMarbleRecipes() {
-    	
-    	// White Marble
-    	GameRegistry.addRecipe(new ItemStack(block.marbleSlabSingle, 2, 0), new Object[]{
-    			"M",
-    			'M', new ItemStack(block.marbleSlabDouble, 1, 0)
-    	});   	
-    	// Black Marble
-    	GameRegistry.addRecipe(new ItemStack(block.marbleSlabSingle, 2, 1), new Object[]{
-    			"M",
-    			'M', new ItemStack(block.marbleSlabDouble, 1, 1)
-    	});
-    	// Yellow Marble
-    	GameRegistry.addRecipe(new ItemStack(block.marbleSlabSingle, 2, 2), new Object[]{
-    			"M",
-    			'M', new ItemStack(block.marbleSlabDouble, 1, 2)
-    	});
+    private void oldInitMarbleRecipes() {    	
+    	/** White Bricks */
+    	GameRegistry.addRecipe(new ItemStack(block.marbleBrick, 1, 0), new Object[]{
+ 		   "MM",
+ 			'M', new ItemStack(block.marble, 1, 0)
+ 	    });   	
+    	/** Black Bricks */
+    	GameRegistry.addRecipe(new ItemStack(block.marbleBrick, 1, 1), new Object[]{
+ 		   "MM",
+ 			'M', new ItemStack(block.marble, 1, 1)
+ 	    });
+    	/** Yellow Bricks */
+    	GameRegistry.addRecipe(new ItemStack(block.marbleBrick, 1, 2), new Object[]{
+ 		   "MM",
+ 			'M', new ItemStack(block.marble, 1, 2)
+ 	    });
+    	/** Ice Bricks */
+    	GameRegistry.addRecipe(new ItemStack(block.marbleBrick, 1, 3), new Object[]{
+  		   "MM",
+  			'M', new ItemStack(Blocks.ice, 1)
+  	    });
+    	/** Ice Smooth */
+    	GameRegistry.addRecipe(new ItemStack(block.marbleBrick, 1, 4), new Object[]{
+  		   "MM",
+  			'M', new ItemStack(block.marbleBrick, 1, 3)
+  	    });
+    	/** Snow Bricks */
+    	GameRegistry.addRecipe(new ItemStack(block.marbleBrick, 1, 5), new Object[]{
+  		   "MM",
+  			'M', new ItemStack(Blocks.snow, 1)
+  	    });
 	}
 
-	private void oldInitBrickRecipes() {
-    	
-    	//White Marble Brick
-    	GameRegistry.addRecipe(new ItemStack(block.marbleBrickSlabDouble, 2, 0), new Object[]{
-    			"MM",
-    			"MM",
-    			 'M', new ItemStack(block.marbleSlabDouble, 1, 0)
-    	});
-    	GameRegistry.addRecipe(new ItemStack(block.marbleBrickSlabSingle, 2, 0), new Object[]{
-			    "M",
-			    'M', new ItemStack(block.marbleBrickSlabDouble, 1, 0)
-	    });
-    	
-    	//Black Marble Brick
-    	GameRegistry.addRecipe(new ItemStack(block.marbleBrickSlabDouble, 2, 1), new Object[]{
-    			"MM",
-    			"MM",
-    			 'M', new ItemStack(block.marbleSlabDouble, 1, 1)
-    	});
-    	GameRegistry.addRecipe(new ItemStack(block.marbleBrickSlabSingle, 2, 1), new Object[]{
-			    "M",
-			    'M', new ItemStack(block.marbleBrickSlabDouble, 1, 1)
-	    });
-    	
-    	//Yellow Marble Brick
-    	GameRegistry.addRecipe(new ItemStack(block.marbleBrickSlabDouble, 2, 2), new Object[]{
-    			"MM",
-    			"MM",
-    			 'M', new ItemStack(block.marbleSlabDouble, 1, 2)
-    	});
-    	GameRegistry.addRecipe(new ItemStack(block.marbleBrickSlabSingle, 2, 2), new Object[]{
-			    "M",
-			    'M', new ItemStack(block.marbleBrickSlabDouble, 1, 2)
-	    });
-    	
-    	//Ice Brick
-    	GameRegistry.addRecipe(new ItemStack(block.marbleBrickSlabDouble, 2, 3), new Object[]{
-			   "MM",
-			   "MM",
-			    'M', Blocks.ice
-	    });
-    	
-    	//Ice Smooth
-    	GameRegistry.addRecipe(new ItemStack(block.marbleBrickSlabDouble, 2, 4), new Object[]{
-			  "MFM",
-			  "MFM",
-			    'M', new ItemStack(block.marbleBrickSlabDouble, 1, 3), 'F', Items.flint
-	    });
-    	
-    	//Snow Brick
-    	GameRegistry.addRecipe(new ItemStack(block.marbleBrickSlabDouble, 2, 5), new Object[]{
-			   "MM",
-			   "MM",
-			    'M', Blocks.snow
-	    });   	
+	private void oldInitSlabRecipes() {
+		/** White Bricks */
+    	GameRegistry.addRecipe(new ItemStack(block.marbleSlabSingle, 3, 0), new Object[]{
+ 		  "MMM",
+ 			'M', new ItemStack(block.marble, 1, 0)
+ 	    });   	
+    	/** Black Bricks */
+    	GameRegistry.addRecipe(new ItemStack(block.marbleSlabSingle, 3, 1), new Object[]{
+    	  "MMM",
+ 			'M', new ItemStack(block.marble, 1, 1)
+ 	    });
+    	/** Yellow Bricks */
+    	GameRegistry.addRecipe(new ItemStack(block.marbleSlabSingle, 3, 2), new Object[]{
+ 		  "MMM",
+ 			'M', new ItemStack(block.marble, 1, 2)
+ 	    });    	   	
 	}
 
 	private void oldInitFreezerRecipes() {

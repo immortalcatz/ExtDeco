@@ -6,9 +6,9 @@ import net.minecraft.block.BlockSlab;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSlab;
 
-public class ItemMarbleSlab extends ItemSlab {
-	public ItemMarbleSlab(Block block) {
-		super(block, (BlockSlab) BlocksExtDeco.marbleSlabSingle, (BlockSlab) BlocksExtDeco.marbleSlabDouble, false);
+public class ItemOtherStuff extends ItemSlab {
+	public ItemOtherStuff(Block block) {
+		super(block, (BlockSlab) BlocksExtDeco.otherStuffSlabSingle, (BlockSlab) BlocksExtDeco.otherStuffSlabDouble, false);
 		this.setMaxDamage(0);
 		this.setHasSubtypes(true);
 	}

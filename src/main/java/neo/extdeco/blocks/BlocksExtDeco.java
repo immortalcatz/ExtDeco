@@ -3,7 +3,7 @@ package neo.extdeco.blocks;
 import neo.extdeco.init.ExtDeco;
 import neo.extdeco.items.ItemMarbleBlock;
 import neo.extdeco.items.ItemMarbleBrickBlock;
-import neo.extdeco.items.ItemMarbleBrickSlab;
+import neo.extdeco.items.ItemOtherStuff;
 import neo.extdeco.items.ItemMarbleSlab;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFence;
@@ -15,7 +15,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class BlocksExtDeco {
 	
 	public static BlockFence whiteMarbleFence;
-	public static Block marble,marbleSlabSingle,marbleSlabDouble,marbleBrick,marbleBrickSlabSingle,marbleBrickSlabDouble,freezer,freezerOn;
+	public static Block marble,marbleSlabSingle,marbleSlabDouble,otherStuffSlabSingle,otherStuffSlabDouble,marbleBrick,marbleBrickSlabSingle,marbleBrickSlabDouble,freezer,freezerOn;
 	
 	public static Block yellowFlowerPotteryWhite,yellowFlowerPotteryBlack,orangeFlowerPotteryWhite,orangeFlowerPotteryBlack,redFlowerPotteryWhite,redFlowerPotteryBlack;
 	public static Block whiteFlowerPotteryWhite,whiteFlowerPotteryBlack;
@@ -25,29 +25,25 @@ public class BlocksExtDeco {
 
 	public void oldInit() {
 		
-		//Normal and half
+		//Brick/Normal and half 
 		marble = new BlockMarble().setHardness(2.0F).setResistance(5.0F).setStepSound(Block.soundTypeStone).setBlockName("marble").setBlockTextureName(ExtDeco.MODID + ":" + "marble");
-		GameRegistry.registerBlock(marble, ItemMarbleBlock.class, marble.getLocalizedName().substring(3));
+		GameRegistry.registerBlock(marble, ItemMarbleBlock.class, "marble");
 		
-		marbleSlabSingle = new BlockMarbleSlabs(false, Material.rock, 3, marbleSlabSingle, marble, 0);
-		marbleSlabDouble = new BlockMarbleSlabs(true, Material.rock, 3, marbleSlabSingle, marble, 0);
-	    
-	    GameRegistry.registerBlock(marbleSlabSingle, ItemMarbleSlab.class, "marbleSlabSingle");
-	    GameRegistry.registerBlock(marbleSlabDouble, ItemMarbleSlab.class, "marbleSlabDouble");
-	    
-	    //Brick's
-		marbleBrick = new BlockMarbleBrick().setHardness(2.2F).setStepSound(Block.soundTypeStone).setBlockName("marbleBrick").setBlockTextureName(ExtDeco.MODID + ":" + "marbleBrick");
-	    GameRegistry.registerBlock(marbleBrick, ItemMarbleBrickBlock.class, marbleBrick.getLocalizedName().substring(6));
+		marbleSlabSingle = new BlockMarbleSlabs(false, Material.rock).setBlockName(ExtDeco.MODID + ":" + "marble");
+		marbleSlabDouble = new BlockMarbleSlabs(true, Material.rock).setBlockName(ExtDeco.MODID + ":" + "marble");
 		
-	    marbleBrickSlabSingle = new BlockMarbleSlabs(false, Material.rock, 6, marbleBrickSlabSingle, marbleBrick, 0).setLightOpacity(3).setBlockName(ExtDeco.MODID + ":" + "marbleBrickSlabSingle");
-		marbleBrickSlabDouble = new BlockMarbleSlabs(true, Material.rock, 6, marbleBrickSlabSingle, marbleBrick, 0).setLightOpacity(3).setBlockName(ExtDeco.MODID + ":" + "marbleBrickSlabDouble");
-	    
-	    GameRegistry.registerBlock(marbleBrickSlabSingle, ItemMarbleBrickSlab.class, "marbleBrickSlabSingle");
-	    GameRegistry.registerBlock(marbleBrickSlabDouble, ItemMarbleBrickSlab.class, "marbleBrickSlabDouble");	    
+		GameRegistry.registerBlock(marbleSlabSingle, ItemMarbleSlab.class, "blockMarbleSlabSingle");
+		GameRegistry.registerBlock(marbleSlabDouble, ItemMarbleSlab.class, "blockMarbleSlabDouble");
+		
+		otherStuffSlabSingle = new BlockOtherStuff(false, Material.rock).setBlockName(ExtDeco.MODID + ":" + "otherStuff");
+		otherStuffSlabDouble = new BlockOtherStuff(true, Material.rock).setBlockName(ExtDeco.MODID + ":" + "otherStuff");
+		
+		GameRegistry.registerBlock(otherStuffSlabSingle, ItemOtherStuff.class, "blockOtherStuffSlabSingle");
+		GameRegistry.registerBlock(otherStuffSlabDouble, ItemOtherStuff.class, "blockOtherStuffSlabDouble");
 	    
 	    //Fences
 	    whiteMarbleFence = new BlockMarbleFence("marbleWhite", "whiteMarbleFence", Material.rock);
-	    GameRegistry.registerBlock(whiteMarbleFence, "whiteMarbleFence");	
+	    GameRegistry.registerBlock(whiteMarbleFence, "whiteMarbleFence");
 	    
 		//Freezer
 		freezer= new BlockFreezer("freezer", 2F, false).setCreativeTab(ExtDeco.tabExtDeco);;
@@ -60,43 +56,43 @@ public class BlocksExtDeco {
 	public void init() {
 		
 		/** Yellow Flower Pottery's*/
-		yellowFlowerPotteryWhite = new BlockPottery("yellowFlowerPotteryWhite", "white");
+		yellowFlowerPotteryWhite = new BlockPottery(0);
 		GameRegistry.registerBlock(yellowFlowerPotteryWhite, "yellowFlowerPotteryWhite");		
-		yellowFlowerPotteryBlack = new BlockPottery("yellowFlowerPotteryBlack", "black");
+		yellowFlowerPotteryBlack = new BlockPottery(1);
 		GameRegistry.registerBlock(yellowFlowerPotteryBlack, "yellowFlowerPotteryBlack");
 		
 		/** Orange Flower Pottery's*/
-		orangeFlowerPotteryWhite = new BlockPottery("orangeFlowerPotteryWhite", "white");
+		orangeFlowerPotteryWhite = new BlockPottery(0);
 		GameRegistry.registerBlock(orangeFlowerPotteryWhite, "orangeFlowerPotteryWhite");		
-		orangeFlowerPotteryBlack = new BlockPottery("orangeFlowerPotteryBlack", "black");
+		orangeFlowerPotteryBlack = new BlockPottery(1);
 		GameRegistry.registerBlock(orangeFlowerPotteryBlack, "orangeFlowerPotteryBlack");
 		
 		/** Red Flower Pottery's*/
-		redFlowerPotteryWhite = new BlockPottery("redFlowerPotteryWhite", "white");
+		redFlowerPotteryWhite = new BlockPottery(0);
 		GameRegistry.registerBlock(redFlowerPotteryWhite, "redFlowerPotteryWhite");		
-		redFlowerPotteryBlack = new BlockPottery("redFlowerPotteryBlack", "black");
+		redFlowerPotteryBlack = new BlockPottery(1);
 		GameRegistry.registerBlock(redFlowerPotteryBlack, "redFlowerPotteryBlack");
 
 		/** White Flower Pottery's*/
-		whiteFlowerPotteryWhite = new BlockPottery("whiteFlowerPotteryWhite", "white");
+		whiteFlowerPotteryWhite = new BlockPottery(0);
 		GameRegistry.registerBlock(whiteFlowerPotteryWhite, "whiteFlowerPotteryWhite");		
-		whiteFlowerPotteryBlack = new BlockPottery("whiteFlowerPotteryBlack", "black");
+		whiteFlowerPotteryBlack = new BlockPottery(1);
 		GameRegistry.registerBlock(whiteFlowerPotteryBlack, "whiteFlowerPotteryBlack");
 		
 		
 		
 		/** Cactus Flower Pottery's*/
-		cactusPotteryWhite = new BlockPottery("cactusPotteryWhite", "white");
+		cactusPotteryWhite = new BlockPottery(0);
 		GameRegistry.registerBlock(cactusPotteryWhite, "cactusPotteryWhite");		
-		cactusPotteryBlack = new BlockPottery("cactusPotteryBlack", "black");
+		cactusPotteryBlack = new BlockPottery(1);
 		GameRegistry.registerBlock(cactusPotteryBlack, "cactusPotteryBlack");
 		
 		
 		
 		/** Buchs Flower Pottery's*/
-		buchsPotteryWhite = new BlockPottery("buchsPotteryWhite", "white");
+		buchsPotteryWhite = new BlockPottery(0);
 		GameRegistry.registerBlock(buchsPotteryWhite, "buchsPotteryWhite");		
-		buchsPotteryBlack = new BlockPottery("buchsPotteryBlack", "black");
+		buchsPotteryBlack = new BlockPottery(1);
 		GameRegistry.registerBlock(buchsPotteryBlack, "buchsPotteryBlack");
 		
 		/*for (Block var12: GameRegistry.findBlock(ExtDeco.MODID, Blocks.fence.getUnlocalizedName()) {

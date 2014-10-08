@@ -22,7 +22,7 @@ group= "neo.extdeco.init" // http://maven.apache.org/guides/mini/guide-naming-co
 archivesBaseName = "ExtDeco-Experimental"
 
 minecraft {
-    version = "1.7.10-10.13.0.1208"
+    version = "1.7.10-10.13.1.1219"
     assetDir = "eclipse/assets"
 }
 
@@ -39,6 +39,8 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    
+    // compile fileTree(dir: 'lib', includes: ['*.jar'])
 
 }
 

@@ -18,24 +18,21 @@ import net.minecraft.world.World;
 
 public class BlockPottery extends BlockContainer {
 	
-	public static String potteryTextureAndName;
-	private String getPotteryColor;
+	private int getPotteryColor;
 	
-	/**
-	 * @param potteryTextureAndName
-	 */
-    public BlockPottery(String potteryTextureAndName, String getPotteryColor) {   	
+    public BlockPottery(int getPotteryColor) {   	
         super(Material.rock);
-        this.potteryTextureAndName = potteryTextureAndName;
         this.getPotteryColor = getPotteryColor;
         this.setBlockTextureName(ExtDeco.MODID + ":" + this.getPotteryColor+"Pottery");
+        this.setHardness(3F);
+        this.setResistance(2F);
         this.setCreativeTab(null);
     }           
     
 	public Item getItemDropped(int p_149650_1_, Random random, int p_149650_3_) {
-		if (getPotteryColor == "white") {
+		if (getPotteryColor == 0) {
 			return ItemsExtDeco.emptyPotteryWhite;
-		} else if (getPotteryColor == "black") {
+		} else if (getPotteryColor == 1) {
 			return ItemsExtDeco.emptyPotteryBlack;
 		} else {
 			FMLLog.info("[Ext Deco] Unknown Pottery color");
@@ -64,7 +61,7 @@ public class BlockPottery extends BlockContainer {
 	}
 
 	public TileEntityPottery createNewTileEntity(World world, int p_149915_2_) {
-		return new TileEntityPottery(world, this.potteryTextureAndName);
+		return new TileEntityPottery(world);
 	}
 	
 	/*public void onEntityCollidedWithBlock(World par1World, int par2, int par3, int par4, Entity par5Entity)

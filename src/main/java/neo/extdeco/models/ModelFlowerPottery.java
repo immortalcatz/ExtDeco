@@ -93,8 +93,7 @@ public class ModelFlowerPottery extends ModelBase
     Shape9.render(f5);
   }
   
-  public void renderModel(float f5)
-  {
+  public void renderModel(float f5) {
 	Shape1.render(f5);
     Shape2.render(f5);
     Shape3.render(f5);   
@@ -107,8 +106,7 @@ public class ModelFlowerPottery extends ModelBase
     
   }
   
-  private void setRotation(ModelRenderer model, float x, float y, float z)
-  {
+  private void setRotation(ModelRenderer model, float x, float y, float z) {
     model.rotateAngleX = x;
     model.rotateAngleY = y;
     model.rotateAngleZ = z;

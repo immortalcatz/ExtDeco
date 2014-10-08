@@ -5,6 +5,7 @@ import neo.extdeco.init.ExtDeco;
 import neo.extdeco.models.ModelBuchsPottery;
 import neo.extdeco.models.ModelCactusPottery;
 import neo.extdeco.models.ModelFlowerPottery;
+import neo.extdeco.models.ModelFlowerPottery2;
 import net.minecraft.client.renderer.tileentity.TileEntitySpecialRenderer;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ResourceLocation;
@@ -12,14 +13,19 @@ import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 
 public class TileEntityPotteryRenderer extends TileEntitySpecialRenderer {
+	
 
-	private ModelFlowerPottery aFlowerModel;
+	private ModelFlowerPottery redYellowModel;
+	private ModelFlowerPottery2 orangeModel;
 	private ModelCactusPottery aCactusModel;
 	private ModelBuchsPottery aBuchsModel;
 	
+	private int ID;
+	
 	public TileEntityPotteryRenderer() {
 		
-		aFlowerModel = new ModelFlowerPottery();
+		redYellowModel = new ModelFlowerPottery();
+		orangeModel = new ModelFlowerPottery2();
 		aCactusModel = new ModelCactusPottery();
 		aBuchsModel = new ModelBuchsPottery();
 	}
@@ -32,42 +38,42 @@ public class TileEntityPotteryRenderer extends TileEntitySpecialRenderer {
 		if (tileEntityPottery.getBlockType() == BlocksExtDeco.yellowFlowerPotteryWhite) {
 			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/yellowFlowerPotteryWhite.png"));
             GL11.glPushMatrix();
-            aFlowerModel.renderModel(0.0625f);
+            redYellowModel.renderModel(0.0625f);
         }
 		if (tileEntityPottery.getBlockType() == BlocksExtDeco.yellowFlowerPotteryBlack) {
 			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/yellowFlowerPotteryBlack.png"));
             GL11.glPushMatrix();
-            aFlowerModel.renderModel(0.0625f);
+            redYellowModel.renderModel(0.0625f);
         }
 		if (tileEntityPottery.getBlockType() == BlocksExtDeco.orangeFlowerPotteryWhite) {
 			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/orangeFlowerPotteryWhite.png"));
             GL11.glPushMatrix();
-            aFlowerModel.renderModel(0.0625f);
+            orangeModel.renderModel(0.0625f);
         }
 		if (tileEntityPottery.getBlockType() == BlocksExtDeco.orangeFlowerPotteryBlack) {
 			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/orangeFlowerPotteryBlack.png"));
             GL11.glPushMatrix();
-            aFlowerModel.renderModel(0.0625f);
+            orangeModel.renderModel(0.0625f);
         }
 		if (tileEntityPottery.getBlockType() == BlocksExtDeco.redFlowerPotteryWhite) {
 			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/redFlowerPotteryWhite.png"));
             GL11.glPushMatrix();
-            aFlowerModel.renderModel(0.0625f);
+            redYellowModel.renderModel(0.0625f);
         }
 		if (tileEntityPottery.getBlockType() == BlocksExtDeco.redFlowerPotteryBlack) {
 			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/redFlowerPotteryBlack.png"));
             GL11.glPushMatrix();
-            aFlowerModel.renderModel(0.0625f);
+            redYellowModel.renderModel(0.0625f);
         }
 		if (tileEntityPottery.getBlockType() == BlocksExtDeco.whiteFlowerPotteryWhite) {
 			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/whiteFlowerPotteryWhite.png"));
             GL11.glPushMatrix();
-            aFlowerModel.renderModel(0.0625f);
+            orangeModel.renderModel(0.0625f);
         }
 		if (tileEntityPottery.getBlockType() == BlocksExtDeco.whiteFlowerPotteryBlack) {
 			this.bindTexture(new ResourceLocation(ExtDeco.MODID + ":" + "textures/models/whiteFlowerPotteryBlack.png"));
             GL11.glPushMatrix();
-            aFlowerModel.renderModel(0.0625f);
+            orangeModel.renderModel(0.0625f);
         }
 		
 		/**Cactus Models */

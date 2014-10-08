@@ -1,16 +1,16 @@
-tile.extdeco:marbleSlabSingle.1.name=Weisser Marmor
-tile.extdeco:marbleSlabSingle.2.name=Schwarzer Marmor
-tile.extdeco:marbleSlabSingle.3.name=Gelber Marmor
-tile.extdeco:marbleBrickSlabSingle.1.name=Weisser Marmor Ziegel
-tile.extdeco:marbleBrickSlabSingle.2.name=Schwarzer Marmor Ziegel
-tile.extdeco:marbleBrickSlabSingle.3.name=Gelber Marmor Ziegel
-tile.extdeco:marbleBrickSlabSingle.4.name=Eis Ziegel
-tile.extdeco:marbleBrickSlabSingle.5.name=Glattes Eis
-tile.extdeco:marbleBrickSlabSingle.6.name=Schnee Ziegel
+extdeco:marbleWhitename=Weisser Marmor
+extdeco:marbleBlack.name=Schwarzer Marmor
+extdeco:marbleYellow.name=Gelber Marmor
+extdeco:marbleBrickWhite.name=Weisser Marmor Ziegel
+extdeco:marbleBrickBlack.name=Schwarzer Marmor Ziegel
+extdeco:marbleBrickYellow.name=Gelber Marmor Ziegel
+extdeco:otherStuffBrickIce.name=Eis Ziegel
+extdeco:otherStuffIceSmooth.name=Glattes Eis
+extdeco:otherStuffBrickSnow.name=Schnee Ziegel
 tile.extdeco:whiteMarbleFence.name=Weisser Marmor Zaun
+
 item.extdeco:emptyPotteryWhite.name=Weisser Topf
 item.extdeco:emptyPotteryBlack.name=Schwarzer Topf
-
 item.extdeco:yellowFlowerPotteryWhite.name=Topf mit Löwenzahn (W)
 item.extdeco:yellowFlowerPotteryBlack.name=Topf mit Löwenzahn (S)
 item.extdeco:orangeFlowerPotteryWhite.name=Topf mit Orangener Tulpe (W)

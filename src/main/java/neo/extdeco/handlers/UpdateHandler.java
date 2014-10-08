@@ -71,7 +71,7 @@ public class UpdateHandler {
 	 * 
 	 * @return : Network status
 	 */
-	private boolean checkUpdateServer() {
+	public static boolean checkUpdateServer() {
 		InputStreamReader inputStreamReader = null;
 		try {
 			URL url = new URL("http://46.38.239.84/neo/updater/ExtDecoUpdate");

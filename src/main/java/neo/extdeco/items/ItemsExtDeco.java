@@ -29,7 +29,7 @@ public class ItemsExtDeco {
 		emptyPotteryBlack = new ItemPottery(true, "emptyPotteryBlack", null);
 		GameRegistry.registerItem(emptyPotteryBlack, "itemEmptyPotteryBlack");
 		
-		
+
 		
 		/** Yellow Flower Pottery's*/
 		yellowFlowerPotteryWhite = new ItemPottery(false, "yellowFlowerPotteryWhite", BlocksExtDeco.yellowFlowerPotteryWhite);
