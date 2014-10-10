@@ -18,10 +18,13 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class BlockMarbleSlabs extends BlockSlab {
-	public static final String[] marbleType = { "marbleWhite", "marbleBlack", "marbleYellow", "marbleBrickWhite", "marbleBrickBlack", "marbleBrickYellow"};
+	
+	public static final String[] marbleType = { "marbleWhite", "marbleBlack", "marbleYellow", "marbleBrickWhite", "marbleBrickBlack", "marbleBrickYellow", "marbleBrickSnow"};
+	
 	@SideOnly(Side.CLIENT)
     private IIcon[] marbleTextures;
 	protected IIcon blockIcon;
+	private int metaNumber = 7;
 
 	public BlockMarbleSlabs(boolean isDouble, Material material) {
 		super(isDouble, material);
@@ -38,12 +41,10 @@ public class BlockMarbleSlabs extends BlockSlab {
 	}
 
 	@SideOnly(Side.CLIENT)
-    public void registerBlockIcons(IIconRegister iconRegister)
-    {
+    public void registerBlockIcons(IIconRegister iconRegister) {
         this.marbleTextures = new IIcon[marbleType.length];
 
-        for (int i = 0; i < this.marbleTextures.length; ++i)
-        {
+        for (int i = 0; i < this.marbleTextures.length; ++i) {
             this.marbleTextures[i] = iconRegister.registerIcon(getName(i));
         }
     }
@@ -79,7 +80,7 @@ public class BlockMarbleSlabs extends BlockSlab {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void getSubBlocks(Item par1, CreativeTabs par2CreativeTabs, List par3List) {
-		for (int i = 0; i < 6; i++) {
+		for (int i = 0; i < metaNumber; i++) {
 			par3List.add(new ItemStack(par1, 1, i));
 		}
 	}

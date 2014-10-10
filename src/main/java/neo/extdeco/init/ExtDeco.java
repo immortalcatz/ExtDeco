@@ -34,10 +34,6 @@ public class ExtDeco {
 
 	@Instance
 	public static ExtDeco modInstance = new ExtDeco();
-
-	private static BlocksExtDeco blocks = new BlocksExtDeco();
-	private ItemsExtDeco items = new ItemsExtDeco();
-	private CraftingHandler crafting = new CraftingHandler();	
 	
 	public boolean oldMod, isPeaceful, isLogAllowed, genWhiteMarble, genBlackMarble, genYellowMarble;
 
@@ -45,7 +41,7 @@ public class ExtDeco {
 
 		@Override
 		public Item getTabIconItem() {
-			return Item.getItemFromBlock(blocks.marble);
+			return Item.getItemFromBlock(BlocksExtDeco.marble);
 		}
 	};
 
@@ -63,13 +59,12 @@ public class ExtDeco {
 		genYellowMarble = config.get(Configuration.CATEGORY_GENERAL, "GenYellowMarble", true).getBoolean(true);
 				
 		config.save();
-		
+
+		BlocksExtDeco.init();
 		if (oldMod) {
-			blocks.oldInit();
-		}
-		
-		blocks.init();
-		items.init();
+    		BlocksExtDeco.oldInit();    		
+    	}
+		ItemsExtDeco.init();       
 		
 		sProxy.registerTileEntities();
         sProxy.registerRenderThings();
@@ -77,6 +72,13 @@ public class ExtDeco {
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
+		CraftingHandler.init();
+    	if (isPeaceful) {
+    		CraftingHandler.peacefulInit();
+		}
+		if (oldMod) {
+			CraftingHandler.oldInit();
+    	}	
 		Side side = event.getSide();
 		if (side == side.CLIENT) {
 			EventHandlerExtDeco events = new EventHandlerExtDeco();	        
@@ -86,16 +88,6 @@ public class ExtDeco {
 			FMLLog.info("[Ext Deco] Server Side startet!");
 		}
         sProxy.registerNetwork();
-
-        crafting.init();
-        
-    	if (oldMod) {
-    		crafting.oldInit();
-    	}
-    	if (isPeaceful) {
-    		crafting.peacefulInit();
-		}
-
 		GameRegistry.registerWorldGenerator(new WorldExtDeco(), 0);
 	}
 }

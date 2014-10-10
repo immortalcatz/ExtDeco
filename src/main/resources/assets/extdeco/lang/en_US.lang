@@ -6,8 +6,7 @@ extdeco:marbleBrickBlack.name=Black Marble Brick
 extdeco:marbleBrickYellow.name=Yellow Marble Brick
 extdeco:otherStuffBrickIce.name=Ice Brick
 extdeco:otherStuffIceSmooth.name=Smooth Ice
-extdeco:otherStuffBrickSnow.name=Snow Brick
-tile.extdeco:whiteMarbleFence.name=White Marble Fence
+extdeco:marbleBrickSnow.name=Snow Brick
 
 item.extdeco:emptyPotteryWhite.name=Empty Pottery White
 item.extdeco:emptyPotteryBlack.name=Empty Pottery Black
@@ -26,4 +25,6 @@ item.extdeco:buchsPotteryWhite.name=Boxwood Pottery (W)
 item.extdeco:buchsPotteryBlack.name=Boxwood Pottery (B)
 item.extdeco:buchsItem.name=Boxwood
 tile.extdeco:freezer.name=Freezer
+
+extdeco:marblebroken.name=Invalid Block please Report
 itemGroup.extDeco=Extended Decorations

@@ -17,7 +17,7 @@ public class ItemsExtDeco {
 	public static Item cactusPotteryWhite,cactusPotteryBlack;
 	public static Item buchsPotteryWhite,buchsPotteryBlack;
 	
-	public void init() {
+	public static void init() {
 		
 		/**Crafting Items */
 		buchsItem = new ItemPottery(true, "buchsItem", null);

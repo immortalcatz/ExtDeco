@@ -6,8 +6,7 @@ extdeco:marbleBrickBlack.name=Schwarzer Marmor Ziegel
 extdeco:marbleBrickYellow.name=Gelber Marmor Ziegel
 extdeco:otherStuffBrickIce.name=Eis Ziegel
 extdeco:otherStuffIceSmooth.name=Glattes Eis
-extdeco:otherStuffBrickSnow.name=Schnee Ziegel
-tile.extdeco:whiteMarbleFence.name=Weisser Marmor Zaun
+extdeco:marbleBrickSnow.name=Schnee Ziegel
 
 item.extdeco:emptyPotteryWhite.name=Weisser Topf
 item.extdeco:emptyPotteryBlack.name=Schwarzer Topf
@@ -26,4 +25,6 @@ item.extdeco:buchsPotteryWhite.name=Topf mit Buchsbaum (W)
 item.extdeco:buchsPotteryBlack.name=Topf mit Buchsbaum (S)
 item.extdeco:buchsItem.name=Buchsbaum
 tile.extdeco:freezer.name=Gefrierer
+
+extdeco:marblebroken.name=Block fehlerhaft, Bitte melden!
 itemGroup.extDeco=Extended Decorations
